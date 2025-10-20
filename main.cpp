@@ -1,6 +1,19 @@
 #include <iostream>
 
-int ** create(size_t rows,size_t cols);
+int ** create(size_t rows,size_t cols){
+    int ** result=new int*[r];
+    size_t i=0;
+    try {
+        for =(i,i<rows;++i){
+            m[i]=new int[c];
+        }
+    }
+    catch(...){
+        remove(result,i);
+        throw;
+    }
+    return result;
+}
 void remove(int ** m, size_t rows){
     for (size_t i=0;i<rows;++i){
         delete[] m[i];
